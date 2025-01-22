@@ -1,25 +1,20 @@
-let name = prompt("Enter your name: ");
-console.log("Your name: ", name);
-let age = prompt("Enter your age: ");
-console.log("Your age: ", age);
+let gameNum = 25;
+let userNum = prompt("Guess The Game Number: ");
 
-if (age >= 18) {
-  console.log("You are an adult.");
-} else {
-  console.log("You are a child.");
+while (userNum != gameNum) {
+  userNum = prompt("You Entered The Wrong Number. Try Again: ");
 }
+console.log("You Guessed Right!");
 
-// for
-// while
-// do while
-// for of
-
-for (let i = 0; i <=50; i++) {
-  console.log(i);
-  if(i%2===0){
-    console.log("Even number: ", i);
-  }
-  if(i%2!==0){
-    console.log("Even number: ", i);
+let books = {
+  book1: {
+    title: "The Alchemist",
+    author: "Paulo Coelho",
+    pages: 208,
+  },
+  book2: {
+    title: "The Great Gatsby",  
+    author: "F. Scott Fitzgerald",
+    pages: 180,
   }
 }
