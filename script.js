@@ -43,3 +43,12 @@ for (let val of items) {
     console.log(val - off);
     i++;
 }
+
+let company = ["Google", "Facebook", "Amazon", "Microsoft", "Apple"];
+console.log(company);
+company.shift();
+console.log(company);
+company.splice(3, 1, "Twitter");
+console.log(company);
+company.push("Oracle");
+console.log(company);
