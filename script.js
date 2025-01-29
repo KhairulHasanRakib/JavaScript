@@ -63,13 +63,38 @@
 // }
 
 // In array print each number with there square
-let numbers = [1, 2, 3, 4, 5];
+// let numbers = [1, 2, 3, 4, 5];
 
-numbers.forEach((numbers => {
-    console.log(numbers * numbers);
-}))
+// numbers.forEach((numbers => {
+//     console.log(numbers * numbers);
+// }))
 
-let out = numbers.reduce((res, curr) => {
+// let out1 = numbers.reduce((res, curr) => {
+//     return res + curr;
+// })
+// let out2 = numbers.reduce((res, curr) => {
+//     return res > curr ? res : curr;
+// })
+// let out3 = numbers.reduce((res, curr) => {
+//     return res < curr ? res : curr;
+// })
+// console.log(out1);
+// console.log(out2);
+// console.log(out3);
+
+let n = prompt("Enter a number: ");
+let arr = [];
+for (let i = 1; i <= n; i++) {
+    arr[i-1] = i;
+}
+console.log(arr);
+
+let sum = arr.reduce((res, curr) => {
     return res + curr;
 })
-console.log(out);
+console.log(sum);
+
+let factorial = arr.reduce((res, curr) => {
+    return res * curr;
+})
+console.log(factorial);
